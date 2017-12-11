@@ -2,27 +2,33 @@
 <html lang="en">
 <head>
 	<title>BEAT托福学习联盟</title>
-	
 	<link rel="stylesheet" type="text/css" href="./css/select.css">
 	<script type="text/javascript" src="./js/jquery-2.1.4.min.js"></script>
 	<script type="text/javascript" >
-	(function(){
-		var w = window.screen.width;
-		var targetW = 1080;
-		var scale = w/targetW; //当前尺寸/目标尺寸
-		var meta = document.createElement("meta");
-		meta.name = "viewport";
-		meta.content = "width=device-width, user-scalable=no,initial-scale="+scale+",minimum-scale="+scale+",maximum-scale="+scale+""
-		//console.log(scale);
-		document.head.appendChild(meta);
-	})();
+		(function(){
+			var w = window.screen.width;
+			var targetW = 1080;
+			var scale = w/targetW; //当前尺寸/目标尺寸
+			var meta = document.createElement("meta");
+			meta.name = "viewport";
+			meta.content = "width=device-width, user-scalable=no,initial-scale="+scale+",minimum-scale="+scale+",maximum-scale="+scale+""
+			document.head.appendChild(meta);
+		})();
+		$(function(){
+			var targetW = 1080;
+			$(window).resize(function(){
+				var w = window.screen.width;
+				var scale = w/targetW; //当前尺寸/目标尺寸
+				$('meta[name = "viewport"]').attr('content',"width=device-width, user-scalable=no,initial-scale="+scale+",minimum-scale="+scale+",maximum-scale="+scale+"")
+			});
+		})
 	</script>
 </head>
 <body>
 	<div class="contaner">
 		<p class="title">BEAT托福【大数据高频词汇】</p>
 		<p class="step_one">第1步：先选择词库</p>
-		<ul class="nav_bar">
+		<ul class="nav_bar" id="oneStep">
 			<li class="active">保底核心词汇</li>
 			<li >高分强化词汇</li>
 			<li>高频词汇题</li>
@@ -52,6 +58,21 @@
 			</a>
 		</div>
 	</div>
-</body>
+	<script type="text/javascript">
+		//导航切换
+		$(function(){
+			//选择词库
+			$("#oneStep").on('click','li',function(){
+				$(this).addClass('active').siblings().removeClass('active')
+				return false
+			})
+			//选择计划
+			$('.nav_bar_two').on('click','li',function(){
+				$(this).addClass('active').siblings().removeClass('active')
+				return false
+			})
 
+		})
+	</script>
+</body>
 </html>
