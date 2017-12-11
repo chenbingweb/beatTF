@@ -1,6 +1,7 @@
 @charset "UTF-8";
 * {
 		box-sizing: border-box; 
+		-webkit-tap-highlight-color: rgba(0,0,0,0);-webkit-tap-highlight-color: transparent;
   }
  a,img
  {
@@ -19,8 +20,9 @@ body, ul, li, h1, h2, h3, h4, h5, h6, p, form, dl, dt, dd
 { 
 	margin: 0px;
 	padding: 0px; 
-	font-weight: normal; 
+	font-weight: none; 
 	list-style: none;
+
 }
 html, body {
 	font-family: "微软雅黑";
