@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>BEAT托福学习联盟</title>
+	
+	<link rel="stylesheet" type="text/css" href="./css/select.css">
+	<script type="text/javascript" src="./js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" >
+	(function(){
+		var w = window.screen.width;
+		var targetW = 1080;
+		var scale = w/targetW; //当前尺寸/目标尺寸
+		var meta = document.createElement("meta");
+		meta.name = "viewport";
+		meta.content = "width=device-width, user-scalable=no,initial-scale="+scale+",minimum-scale="+scale+",maximum-scale="+scale+""
+		//console.log(scale);
+		document.head.appendChild(meta);
+	})();
+	</script>
+</head>
+<body>
+	<div class="contaner">
+		<p class="title">BEAT托福【大数据高频词汇】</p>
+		<p class="step_one">第1步：先选择词库</p>
+		<ul class="nav_bar">
+			<li class="active">保底核心词汇</li>
+			<li >高分强化词汇</li>
+			<li>高频词汇题</li>
+		</ul>
+		<div class="content">
+			说明：保底核心词共2000个，是85分的最低词汇量底线。
+			这些单词主要服务于“阅读”和“听力”等输入类考试，因此并不强求拼写准确无误，只要达到：看见单词，秒懂词意就足够帮助理解做题。（“口语”和“写作”等必须掌握发音和拼写的输出类词汇量要少
+		</div>
+		<div class="arrow_box">
+			<img class="arrow" src="./img/row.png">
+		</div>
+		<p class="step_tow step_one">第2步：再选择计划</p>
+		<ul class="nav_bar nav_bar_two">
+			<li class="active">7天</li>
+			<li>14天</li>
+			<li>21天</li>
+			<li>30天</li>
+		</ul>
+		<div class="content" id=step_tow>
+			说明：保底核心词共2000个，是85分的最低词汇量底线。
+			这些单词主要服务于“阅读”和“听力”等输入类考试，因此并不强求拼写准确无误，只要达到：看见单词，秒懂词意就足够帮助理解做题。（“口语”和“写作”等必须掌握发音和拼写的输出类词汇量要少
+		</div>
+		<div class="btn_box">
+			<a href="javascript:;" class="three_step">
+				<span>第3步：计划开始</span>
+				<img src="./img/step_3.png" >
+			</a>
+		</div>
+	</div>
+</body>
+
+</html>
