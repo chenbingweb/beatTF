@@ -1,0 +1,129 @@
+@charset "UTF-8";
+* {
+		box-sizing: border-box; 
+		-webkit-tap-highlight-color: rgba(0,0,0,0);-webkit-tap-highlight-color: transparent;
+  }
+ a,img
+ {
+ 	border-style:none;
+	text-decoration:none;
+	outline: none;
+	-webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+ }
+ b
+ {
+ 	font-weight: normal;
+ }
+a:hover
+{
+	text-decoration:none;
+}
+body, ul, li, h1, h2, h3, h4, h5, h6, p, form, dl, dt, dd 
+{ 
+	margin: 0px;
+	padding: 0px; 
+	font-weight: none; 
+	list-style: none;
+
+}
+html, body {
+	height: 100%;
+	font-family: "微软雅黑";
+	background-color: #f5f5f5;
+	position: relative;
+	overflow: hidden;
+}
+.contaner
+{
+	padding-bottom: 20px;
+}
+.title
+{
+	width: 100%;
+	font-size: 48px;
+	height:116px;
+	background-color: #009999;
+	line-height: 116px;
+	text-align: center;
+	color:white;
+}
+/*#Ulist li:nth-of-type(odd){ margin-left: 20px;}奇数行   
+#Ulist li:nth-of-type(even){margin-left: 10px;}偶数行   */
+.word_box li
+{
+	height: 85px;
+	line-height: 85px;
+	padding:0 33px;
+	font-size: 55px;
+	color:#666;
+}
+.word_box li:nth-of-type(odd)
+{
+	background-color:#F5F5F5;
+}
+.word_box li:nth-of-type(even)
+{
+	background-color:#E4E4E4;
+}
+.page
+{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: #12AFA7;
+	height: 117px;
+	padding: 0 24px;
+	font-size: 48px;
+	color:white;
+	display: -webkit-inline-flex;
+	-webkit-align-items: center;
+	-webkit-justify-content:space-around;
+	display: inline-flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+.page span
+{
+	display:inline-block;
+	line-height: 117px;
+	display: -webkit-inline-flex;
+	-webkit-align-items: center;
+	-webkit-justify-content:space-around;
+	display: inline-flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.page span i
+{
+	width:0;
+	height:0;
+	display:inline-block;
+}
+.first
+{
+	width:0;
+	height:0;
+	border-top:18px solid transparent;
+	border-bottom:18px solid transparent;
+	border-right:18px solid white;
+}
+.page span:nth-child(2),.page span:nth-child(5)
+{
+	margin-left: 30px;
+}
+.back
+{
+	 width:0;
+    height:0;
+    border-top:18px solid transparent;
+    border-bottom: 18px solid transparent;
+    border-left: 18px solid white;
+}
+.word_box
+{
+	 height: 87.65vh;
+	overflow: scroll;
+}
