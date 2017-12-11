@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>BEAT托福学习联盟</title>
+	<link rel="stylesheet" type="text/css" href="./css/plan.css">
+	<script type="text/javascript" src="./js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" >
+		(function(){
+			var w = window.screen.width;
+			var targetW = 1080;
+			var scale = w/targetW; //当前尺寸/目标尺寸
+			var meta = document.createElement("meta");
+			meta.name = "viewport";
+			meta.content = "width=device-width, user-scalable=no,initial-scale="+scale+",minimum-scale="+scale+",maximum-scale="+scale+""
+			document.head.appendChild(meta);
+		})();
+		$(function(){
+			var targetW = 1080;
+			$(window).resize(function(){
+				var w = window.screen.width;
+				var scale = w/targetW; //当前尺寸/目标尺寸
+				$('meta[name = "viewport"]').attr('content',"width=device-width, user-scalable=no,initial-scale="+scale+",minimum-scale="+scale+",maximum-scale="+scale+"")
+			});
+		})
+	</script>
+</head>
+<body>
+	<div class="contaner">
+		<p class="title">保底核心词汇-30天计划-每天约66个单词</p>
+		<ul class="day_box">
+		<!--
+			<li>
+				<a href="javascript:;" class="item"><span>day</span><span>1</span></a>
+			</li>-->
+			
+		</ul>
+	</div>
+	<script type="text/javascript">
+
+			for(var i=0;i<30;i++){
+				$('.day_box').append('<li><a href="javascript:;" class="item"><span>day</span><span>'+(i+1)+'</span></a></li>')
+			}
+	</script>
+</body>
+</html>
+
