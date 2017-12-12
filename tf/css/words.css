@@ -37,7 +37,7 @@ html, body {
 }
 .contaner
 {
-	padding-bottom: 20px;
+	margin-bottom: 0px;
 }
 .title
 {
@@ -49,8 +49,7 @@ html, body {
 	text-align: center;
 	color:white;
 }
-/*#Ulist li:nth-of-type(odd){ margin-left: 20px;}奇数行   
-#Ulist li:nth-of-type(even){margin-left: 10px;}偶数行   */
+
 .word_box li
 {
 	height: 85px;
@@ -126,4 +125,6 @@ html, body {
 {
 	 height: 87.40vh;
 	overflow: scroll;
+	padding-bottom: 10px;
+	-webkit-overflow-scrolling: touch;
 }
