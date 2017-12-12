@@ -71,7 +71,7 @@ html, body {
 {
 	position: absolute;
 	left: 0;
-	bottom: 0;
+	bottom: 0px;
 	right: 0;
 	background-color: #12AFA7;
 	height: 117px;
@@ -124,6 +124,6 @@ html, body {
 }
 .word_box
 {
-	 height: 87.65vh;
+	 height: 87.40vh;
 	overflow: scroll;
 }
